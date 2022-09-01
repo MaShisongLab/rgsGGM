@@ -57,8 +57,6 @@ ggm =
           samples_num: 59097
           RoundNumber: 20000
              SigEdges: [1254559x5 table]
-                notes: []
-
 
 
 ggm.SigEdges(1:10,:)
