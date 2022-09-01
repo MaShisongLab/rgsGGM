@@ -82,7 +82,7 @@ ans =
 <B>ggm.SigEdges</B> contains the gene pairs with |pcors| >= 0.02, listing their gene names, partial correlation coefficients (pcor), the number of iteration they are sampled (SamplingTime), and their Pearson correlation coefficients (r).
 ```matlab
 % save all gene pairs with pcor >= a cutoff value to a file for gene co-expression construction
-i = ggm.SigEdges{:,4} >= 0.045
+i = ggm.SigEdges{:,4} >= 0.045;
 writetable(ggm.SigEdges(i,1:3),'human.ggm.network.txt','Delimiter','tab','WriteVariableNames',FALSE)
 ```
 The network can then be clustered via network clustering algorithm to obtain gene co-expression module and used for down-stream analysis.
