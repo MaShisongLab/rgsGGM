@@ -2,7 +2,7 @@
 
 **Gene co-expression network analysis based on the graphical Gaussian model.**
 
-This is a MATLAB algorithm for gene co-expression network analysis based on the graphical Gaussian model (GGM). The algorithm is modified from a previously published method ([Ma *et al*, 2007](https://github.com/MaShisongLab/rgsGGM#References)). It takes an gene expression matrix as input and uses a procedure consisting of ~ 20,000 iterations to calculate partial correlation coefficients (pcors) between gene pairs. In each iteration, 2,000 genes are randomly selected and pcors between these genes are calculated. After all iterations, every gene pair is selected in multiple iterations with multiple pcors calculated, and the pcor with lowest absolution value is chosen as the gene pair's final pcor. All the gene pairs with pcors larger or equal to a selected cutoff value are then used to build a GGM gene co-expression network. Hence, the algorithm is named as <B>rgsGGM</B> (random gene sampling-based graphical Gaussian model). For more details on rgsGGM, please refer to [Wang et al, 2022](https://github.com/MaShisongLab/rgsGGM#References).
+This is a MATLAB algorithm for gene co-expression network analysis based on the graphical Gaussian model (GGM). The algorithm is modified from a previously published method ([Ma *et al*, 2007](https://github.com/MaShisongLab/rgsGGM#References)). It takes an gene expression matrix as input and uses a procedure consisting of ~ 20,000 iterations to calculate partial correlation coefficients (pcors) between gene pairs. In each iteration, 2,000 genes are randomly selected and pcors between these genes are calculated. After all iterations, every gene pair is selected in multiple iterations with multiple pcors calculated, and the pcor with lowest absolution value is chosen as the gene pair's final pcor. All the gene pairs with pcors larger or equal to a selected cutoff value are then used to build a GGM gene co-expression network. Hence, the algorithm is named as <B>rgsGGM</B> (random gene sampling-based graphical Gaussian model). For more details on rgsGGM, please refer to [Wang et al, 2023](https://github.com/MaShisongLab/rgsGGM#References).
 
 ## Table of Contents
 - [Install](https://github.com/MaShisongLab/rgsGGM#Install)
@@ -93,5 +93,5 @@ Lachmann A, Torre D, Keenan AB, Jagodnik KM, Lee HJ, Wang L, Silverstein MC, and
 
 Ma S, Gong Q, and Bohnert HJ. 2007. An Arabidopsis gene network based on the graphical Gaussian model. *Genome Research* 17:1614-1625.
 
-Wang Y, Zhang Y, Yu N, Li B, Gong J, Mei Y, Bao J, Ma S. 2022. Decoding transcriptional regulation via a human gene expression predictor. *submitted* 
+Wang Y, Zhang Y, Yu N, Li B, Gong J, Mei Y, Bao J, and Ma S. 2023. Decoding transcriptional regulation via a human gene expression predictor. *Journal of Genetics and Genomics* Advance online publication. https://doi.org/10.1016/j.jgg.2023.01.006 
 
